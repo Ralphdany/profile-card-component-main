@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    display: flex;
+    background-color: hsl(185, 75%, 39%);
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+main{
+    height: 100vh;
+    display: flex;
+}
+section{
+    margin: auto;
+    display: grid;
+    grid-template-rows:  150px 300px;
+    flex-direction: column;
+    
+
+}
+.celebrity{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: contain;
+
+}
+.picture{
+    position: absolute;
+    border: solid white 4px;
+    border-radius: 100%;
+    background-image:url(images/image-victor.jpg);
+    background-size: cover;
+    height: 90px;
+    width: 90px;
+    margin-top: 150px;
+}
+.informations{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+.informations h2{
+    color: hsl(0, 0%, 59%);
+    
+    margin-bottom:30px ;
+    margin-top: 20px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.name h1{
+    margin-right: 10px;
+    color: hsl(229, 23%, 23%);
+}
+.name span{
+    font-size: 20px;
+    color:  hsl(0, 0%, 59%);
+}
+.statistics{
+    display: flex;
+    padding: 20px;
+}
+.statistics h1{
+color:hsl(229, 23%, 23%) ;
+}
+.statistics p{
+    color: hsl(0, 0%, 59%);
+}
+.statistics span{
+    margin: 20px;
+ 
+}
+@media screen and (max-width:375px) {
+    main{
+        width: 100%;
+    }
+    section{
+        width: fit-content;
+        padding: 30px;
+    
+    }
+}
